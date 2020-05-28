@@ -1,0 +1,45 @@
+Dear Editor and Reviewers:
+
+Please follow the below introduction to use this package.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PolarQZ.m : This is the main file to show the lossy compression performance of polar lattices. 
+            You can check the realized distortion and the compression speed there.
+            We gave three target distortions 0.10 0,14 and 0.20 for exmaples.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+LatticeQZ_Para_settings_FixSigma_s.m: The m file is to set the parameter of the polar lattices
+                                      for fixed sigma_s and given target distortion
+                                      we check the distance between Y and Y' in our paper.
+                                      we calculate the flatness factor associated with the partition chain
+                                      and obtain the proportions of the set F I and S for each level
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CalculateZn.m:          This m file is used to prepare the Bhattacharyya parameters for the polar codes at each level.
+                        As we mentioned in our paper, the method is based on Tal and Vardy's method in "How to construct polar codes"
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+MultilevelYXXDensityFunc.m
+MultilevelYXOXDensityFunc.m
+MultilevelYPrimeDensityFunc.m
+MultilevelYXDensityFunc.m
+MultilevelYDensityFunc.m
+MutualInfoYXAll.m                               These are supporting files to evaluate the P(Y, X_{1:\ell-1}|X_{\ell}) P(Y, X_{1:\ell-1}|X_{\ell}) for each level.
+                                  
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
